@@ -1,0 +1,18 @@
+.login-form-container {
+    width: 70%;
+    height: 70%;
+    background-color: white;
+
+}
+
+.login-form-container>form {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+.login-form-container>form>* {
+    width: 70%;
+    margin: 2vh;
+
+}
