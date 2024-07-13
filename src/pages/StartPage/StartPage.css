@@ -1,0 +1,40 @@
+.start-page {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.buttons-container {
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #0197f6; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons-container > a {
+  display: inline-block;
+  width: 15vw;
+  padding: 1.4vw;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.buttons-container > a:nth-child(1) {
+  background-color: #448fa3;
+  color: white;
+}
+
+.buttons-container > a:nth-child(2) {
+  background-color: white;
+  color: #448fa3;
+  border: 1px solid #448fa3;
+}
