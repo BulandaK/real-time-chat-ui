@@ -1,14 +1,15 @@
-import './App.css'
-import LoginPage from './pages/LoginPage/LoginPage'
-
+import { Outlet } from "react-router-dom";
+import "./App.css";
 
 function App() {
-  
   return (
-    <>
-      <LoginPage />
-    </>
-  )
+    <div className="layout-container">
+      <div className="layout-title">
+        <h1>Real Time Chat </h1>
+      </div>
+      <Outlet />
+    </div>
+  );
 }
 
-export default App
+export default App;
