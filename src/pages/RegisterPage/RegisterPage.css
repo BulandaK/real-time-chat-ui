@@ -1,6 +1,6 @@
 .reg-container {
   /* background-color: #68c5db; */
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -9,37 +9,33 @@
 }
 .reg-title {
   /* background-color: aqua; */
-  margin-top: 20%;
+  /* margin-top: 20%; */
   width: 60%;
-  border-bottom: 1px solid #02182b;
 }
 
 .reg-form {
   width: 60%;
-  height: 80%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: space-around;
+  border-top: 1px solid #448fa3;
+  border-bottom: 1px solid #448fa3;
   /* background-color: #68c5db; */
 }
 
 .reg-form > div {
   width: 100%;
   height: 8%;
-  margin-top: 10%;
-  /* border-radius: 5%; */
-  /* color: #0197f6; */
+}
+.reg-form > div:nth-child(1) {
+  margin-top: 5%;
 }
 
-/* .reg-form > div:nth-child(1) {
-  margin-top: 15%;
-} */
 .reg-form > button {
   margin-top: 5%;
   width: 30%;
   height: 7%;
   font-size: 1.2rem;
-  /* color: #d7263d; */
-  /* background-color: #d7263d; */
 }
