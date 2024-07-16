@@ -3,6 +3,8 @@ import { Button, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import "./RegisterPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
+import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
+import ChatIcon from "@mui/icons-material/Chat";
 
 type Inputs = {
   name: string;
@@ -12,7 +14,7 @@ type Inputs = {
 };
 const CustomCssInput = styled(TextField)({
   "& label.Mui-focused": {
-    color: "#448FA3",
+    color: "#fff",
   },
   "& label": { color: "#448FA3" },
   "& .MuiFilledInput-underline:after": {
@@ -54,7 +56,16 @@ const RegisterPage = () => {
   console.log(errors);
   return (
     <div className="reg-container">
-      <h2 className="reg-title">Create an account to Real Time Chat</h2>
+      <div className="reg-toggle">
+        <div>
+          <h3>Real Time Chat</h3>
+          <ChatIcon />
+        </div>
+
+        <ToggleTheme />
+      </div>
+
+      <h2 className="reg-form-title">Create an account to Real Time Chat</h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="reg-form">
         {/* register your input into the hook by invoking the "register" function */}
