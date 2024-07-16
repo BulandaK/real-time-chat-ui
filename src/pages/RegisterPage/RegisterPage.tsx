@@ -12,7 +12,7 @@ type Inputs = {
 };
 const CustomCssInput = styled(TextField)({
   "& label.Mui-focused": {
-    color: "#448FA3",
+    color: "#fff",
   },
   "& label": { color: "#448FA3" },
   "& .MuiFilledInput-underline:after": {
