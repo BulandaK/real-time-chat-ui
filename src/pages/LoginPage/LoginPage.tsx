@@ -1,7 +1,8 @@
 // import React from "react";
 import { Button, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import "./LoginPage.css";  // Make sure you have a corresponding CSS file for the login page
+import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
+import "./LoginPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
