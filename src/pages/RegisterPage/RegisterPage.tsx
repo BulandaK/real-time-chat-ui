@@ -4,7 +4,6 @@ import { styled } from "@mui/material/styles";
 import "./RegisterPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
-import ChatIcon from "@mui/icons-material/Chat";
 
 type Inputs = {
   name: string;
@@ -57,10 +56,7 @@ const RegisterPage = () => {
   return (
     <div className="reg-container">
       <div className="reg-toggle">
-        <div>
-          <h3>Real Time Chat</h3>
-          <ChatIcon />
-        </div>
+        <h3>Real Time Chat</h3>
 
         <ToggleTheme />
       </div>

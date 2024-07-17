@@ -14,21 +14,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border-bottom: 1px solid #448fa3; */
-  /* background-color: #448fa3; */
 }
-.reg-toggle > div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  width: 32%;
-  /* background-color: #448fa3; */
+.reg-toggle h3 {
+  color: white;
+  background: #d7263d;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  padding: 2%;
 }
 
 .reg-form-title {
-  margin-top: 21%;
-  /* height: 20%; */
+  margin-top: 20%;
   width: 70%;
-  /* background-color: #448fa3; */
+  padding: 3% 0 3% 10px;
+
+  color: white;
+  background: #68c5db;
+  margin-bottom: 1%;
 }
 
 .reg-form {

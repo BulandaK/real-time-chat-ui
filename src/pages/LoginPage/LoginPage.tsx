@@ -49,6 +49,11 @@ const LoginPage = () => {
 
   return (
     <div className="login-container">
+      <div className="reg-toggle">
+        <h3>Real Time Chat</h3>
+
+        <ToggleTheme />
+      </div>
       <h2 className="login-title">Login to Real Time Chat</h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="login-form">
