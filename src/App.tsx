@@ -1,18 +1,12 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import { Link } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <div className="layout-container">
-      <div className="layout-title">
-        <h1>Real Time Chat </h1>
-        <div className="buttons-container">
-          <Link to="/login">Sign in</Link>
+    <div className="app-container">
+      <Layout />
 
-          <Link to="register">Sign up</Link>
-        </div>
-      </div>
       <Outlet />
     </div>
   );
