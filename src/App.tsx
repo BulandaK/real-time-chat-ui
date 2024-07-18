@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <div className="layout-container">
-      <div className="layout-title">
-        <h1>Real Time Chat </h1>
-      </div>
+    <div className="app-container">
+      <Layout />
+
       <Outlet />
     </div>
   );
