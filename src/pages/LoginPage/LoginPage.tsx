@@ -55,29 +55,28 @@ const LoginPage = () => {
         <ToggleTheme />
       </div>
       <h2 className="login-title">Login to Real Time Chat</h2>
-      <div className="login-form-container">
-        <form onSubmit={handleSubmit(onSubmit)} className="login-form">
-          <CustomCssInput
-            label="Email"
-            variant="filled"
-            {...login("email", { required: true })}
-            error={errors.email ? true : false}
-          />
-          <CustomCssInput
-            label="Password"
-            type="password"
-            variant="filled"
-            {...login("password", {
-              required: true,
-              minLength: { value: 8, message: "Min length is 8" },
-            })}
-            error={errors.password ? true : false}
-            helperText={errors.password?.message}
-          />
 
-          <Button type="submit">Login</Button>
-        </form>
-      </div>
+      <form onSubmit={handleSubmit(onSubmit)} className="login-form">
+        <CustomCssInput
+          label="Email"
+          variant="filled"
+          {...login("email", { required: true })}
+          error={errors.email ? true : false}
+        />
+        <CustomCssInput
+          label="Password"
+          type="password"
+          variant="filled"
+          {...login("password", {
+            required: true,
+            minLength: { value: 8, message: "Min length is 8" },
+          })}
+          error={errors.password ? true : false}
+          helperText={errors.password?.message}
+        />
+
+        <Button type="submit">Login</Button>
+      </form>
     </div>
   );
 };
