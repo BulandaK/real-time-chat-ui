@@ -13,7 +13,7 @@ type Inputs = {
 };
 const CustomCssInput = styled(TextField)({
   "& label.Mui-focused": {
-    color: "#fff",
+    color: "#448FA3",
   },
   "& label": { color: "#448FA3" },
   "& .MuiFilledInput-underline:after": {
@@ -23,7 +23,6 @@ const CustomCssInput = styled(TextField)({
     borderBottomColor: "#68C5DB",
   },
   "& .MuiFilledInput-root": {
-    // backgroundColor: "#448FA3", // Background color for filled variant
     "&:hover": {
       backgroundColor: "#68C5DB",
     },
@@ -31,9 +30,6 @@ const CustomCssInput = styled(TextField)({
       backgroundColor: "#68C5DB",
       color: "#fff",
     },
-  },
-  "& .MuiInputBase-input": {
-    // color: "#fff", // Text color for better contrast with the background
   },
 });
 
@@ -74,13 +70,15 @@ const RegisterPage = () => {
         />
         <CustomCssInput
           label="surname"
-          {...register("surname", { required: true })}
           variant="filled"
+          {...register("surname", { required: true })}
+          error={errors.email ? true : false}
         />
         <CustomCssInput
           label="email"
           variant="filled"
           {...register("email", { required: true })}
+          error={errors.email ? true : false}
         />
 
         <CustomCssInput
@@ -92,6 +90,7 @@ const RegisterPage = () => {
             minLength: { value: 8, message: "min length is 8" },
           })}
           helperText={errors.password?.message}
+          error={errors.email ? true : false}
         />
 
         {/* <input type="submit" value="register" /> */}

@@ -15,7 +15,7 @@
   padding: 3% 0 3% 10px;
 
   color: white;
-  background: #68c5db;
+  background: #0197F6;
   margin-bottom: 1%;
 }
 
@@ -26,22 +26,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid #448fa3;
-  border-bottom: 1px solid #448fa3;
+  border-top: 1px solid #0197F6;
+  border-bottom: 1px solid #0197F6;
   /* background-color: #68c5db; */
 }
 
-.login-form > div {
+.login-form>div {
   width: 100%;
   height: 8%;
 }
 
-.login-form > button {
+.login-form>button {
   margin-top: 5%;
   width: 100%;
   height: 15%;
   font-size: 1.2rem;
 
   color: #fff;
-  background-color: #448fa3;
+  background-color: #0197F6;
+}
+
+.login-form>button:hover {
+  background-color: #68C5DB;
+  ;
 }
