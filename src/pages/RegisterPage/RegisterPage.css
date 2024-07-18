@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .reg-toggle h3 {
   color: white;
   background: #d7263d;
@@ -29,7 +30,7 @@
   padding: 3% 0 3% 10px;
 
   color: white;
-  background: #68c5db;
+  background: #0197F6;
   margin-bottom: 1%;
 }
 
@@ -40,27 +41,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid #448fa3;
-  border-bottom: 1px solid #448fa3;
+  border-top: 1px solid #0197F6;
+  border-bottom: 1px solid #0197F6;
   /* background-color: #68c5db; */
 }
 
-.reg-form > div {
+.reg-form>div {
   width: 100%;
   height: 8%;
 }
-.reg-form > div:nth-child(1) {
+
+.reg-form>div:nth-child(1) {
   margin-top: 5%;
 }
 
-.reg-form > button {
+.reg-form>button {
   margin-top: 5%;
   width: 100%;
   height: 10%;
   font-size: 1.2rem;
   color: #fff;
-  background-color: #448fa3;
+  background-color: #0197F6;
 }
-.reg-form > button:hover {
+
+.reg-form>button:hover {
   background-color: #68c5db;
 }
