@@ -18,9 +18,9 @@
 }
 
 .layout-img img {
-  width: 30%;
+  width: 10%;
   position: absolute;
-  top: 25%;
+  top: 45%;
   z-index: 2;
 }
 

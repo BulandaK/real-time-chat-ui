@@ -11,7 +11,7 @@ function Layout() {
       let wichImage;
       i % 2 == 0 ? (wichImage = chat1) : (wichImage = chat2);
       pomTable.push(
-        <img src={wichImage} alt="" style={{ left: `${i * 15 - 10}%` }} />
+        <img src={wichImage} alt="" style={{ left: `${i * 15}%` }} />
       );
       setImgTable(pomTable);
     }
