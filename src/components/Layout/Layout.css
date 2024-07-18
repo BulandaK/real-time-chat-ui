@@ -1,0 +1,36 @@
+.layout-container {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  background-color: #02182b;
+  position: relative;
+}
+
+.layout-container > h1 {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  font-size: 5.2rem;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  background: linear-gradient(to right, #d7263d, #02182b, #d7263d);
+}
+
+.layout-img img {
+  width: 10%;
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+}
+
+.layout-description {
+  color: white;
+  width: 55%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px solid #d7263d;
+  padding-bottom: 1%;
+}
