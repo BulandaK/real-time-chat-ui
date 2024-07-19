@@ -1,0 +1,33 @@
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10vh;
+}
+.chat-item:hover {
+  background-color: #011425;
+  cursor: pointer;
+}
+
+.chat-item .chat-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  /* background-color: rebeccapurple; */
+}
+
+.chat-item .friend-info {
+  display: flex;
+  gap: 12px;
+  color: white;
+}
+
+.chat-item .friend-msg {
+  width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: gray;
+}
