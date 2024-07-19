@@ -1,7 +1,7 @@
 .chat-page-container {
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .chat-page-container > .side-bar {
   width: 25%;
