@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
 import "./LoginPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { useState } from "react";
 
 type Inputs = {
   email: string;
@@ -12,22 +13,22 @@ type Inputs = {
 
 const CustomCssInput = styled(TextField)({
   "& label.Mui-focused": {
-    color: "#448FA3",
+    color: "var(--third-color)",
   },
-  "& label": { color: "#448FA3" },
+  "& label": { color: "var(--third-color)" },
   "& .MuiFilledInput-underline:after": {
-    borderBottomColor: "#68C5DB",
+    borderBottomColor: "var(--fifth-color)",
   },
   "& .MuiFilledInput-underline:before": {
-    borderBottomColor: "#68C5DB",
+    borderBottomColor: "var(--fifth-color)",
   },
   "& .MuiFilledInput-root": {
     "&:hover": {
-      backgroundColor: "#68C5DB",
+      backgroundColor: "var(--fifth-color)",
     },
     "&.Mui-focused": {
-      backgroundColor: "#68C5DB",
-      color: "#fff",
+      backgroundColor: "var(--fifth-color)",
+      color: "var(--third-color)"
     },
   },
 });
@@ -47,23 +48,32 @@ const LoginPage = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   console.log(errors);
 
+  const [isDark, setIsDark] = useState<boolean>(false);
+
+  const handleChange = () => {
+    setIsDark(!isDark);
+  };
+
   return (
-    <div className="login-container">
+    <div className="login-container" data-theme={isDark ? "dark" : "light"}>
       <div className="reg-toggle">
         <h3>Real Time Chat</h3>
 
-        <ToggleTheme />
+        <ToggleTheme checked={isDark} onChange={handleChange} />
       </div>
-      <h2 className="login-title">Login to Real Time Chat</h2>
+
 
       <form onSubmit={handleSubmit(onSubmit)} className="login-form">
+        <h2 className="login-title">Login to Real Time Chat</h2>
         <CustomCssInput
+          className="customCssInput"
           label="Email"
           variant="filled"
           {...login("email", { required: true })}
           error={errors.email ? true : false}
         />
         <CustomCssInput
+          className="customCssInput"
           label="Password"
           type="password"
           variant="filled"

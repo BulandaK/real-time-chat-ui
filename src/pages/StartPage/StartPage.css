@@ -1,40 +1,96 @@
 .start-page {
-  position: relative;
-  width: 50%;
+  width: 40%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
 }
 
 .buttons-container {
-  width: 80%;
-  height: 40%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* background-color: #0197f6; */
+  width: 60%;
+  height: 45%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  /* background-color: #68c5db; */
 }
 
-.buttons-container > a {
-  display: inline-block;
-  width: 15vw;
+.start-toggle {
+  width: 60%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-toggle h3 {
+  color: var(--base-color);
+  /*white*/
+  background: var(--second-color);
+  /* #d7263d */
+  font-size: 0.9rem;
+  border-radius: 12px;
+  padding: 2%;
+}
+
+.buttons-container>a {
+  width: 10%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
   padding: 1.4vw;
   font-size: 1.3rem;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 11px;
   text-align: center;
 }
 
-.buttons-container > a:nth-child(1) {
-  background-color: #448fa3;
-  color: white;
+.buttons-container>a:nth-child(1) {
+  background-color: var(--hover-color);
+  /* #0197F6 */
+  color: var(--base-color);
+  /*white*/
+  border: 2px solid var(--second-color);
 }
 
-.buttons-container > a:nth-child(2) {
-  background-color: white;
-  color: #448fa3;
-  border: 1px solid #448fa3;
+.buttons-container>a:nth-child(2) {
+  background-color: var(--base-color);
+  /*white*/
+  color: var(--first-color);
+  /* #0197F6 */
+  border: 2px solid var(--second-color);
+  /* #0197F6 */
+}
+
+.buttons-container>a:hover {
+  background-color: var(--first-color);
+  color: var(--third-color);
+  /* #68C5DB */
+  ;
+}
+
+:root {
+  --first-color: #0197F6;
+  --second-color: #d7263d;
+  --third-color: #02182B;
+  --fourth-color: #448FA3;
+  --fifth-color: #68C5DB;
+  --base-color: white;
+  --background-color: white;
+  --white-balck-color: white;
+}
+
+[data-theme="dark"] {
+  --first-color: #02182B;
+  --second-color: #d7263d;
+  --third-color: #68C5DB;
+  --fourth-color: #448FA3;
+  --fifth-color: #0197F6;
+  --base-color: white;
+  --white-balck-color: black;
+  --background-color: #02182B;
+  --hover-color: #0197F6;
 }

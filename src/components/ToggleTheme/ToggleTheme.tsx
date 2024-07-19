@@ -49,12 +49,19 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-const ToggleTheme = () => {
+const ToggleTheme = ({ checked, onChange }: { checked: boolean, onChange: () => void }) => {
   return (
-    <FormControlLabel
-      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-      label=""
-    />
+    <div>
+
+      <FormControlLabel
+        control={<MaterialUISwitch sx={{ m: 1 }}
+          defaultChecked
+          onChange={onChange}
+          checked={checked}
+        />}
+        label=""
+      />
+    </div>
   );
 };
 

@@ -4,6 +4,8 @@ import { styled } from "@mui/material/styles";
 import "./RegisterPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
+import { useState } from "react";
+
 
 type Inputs = {
   name: string;
@@ -49,12 +51,19 @@ const RegisterPage = () => {
   });
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   console.log(errors);
+
+  const [isDark, setIsDark] = useState<boolean>(true);
+
+  const handleChange = () => {
+    setIsDark(!isDark);
+  };
+
   return (
-    <div className="reg-container">
+    <div className="reg-container" data-theme={isDark ? "dark" : "light"}>
       <div className="reg-toggle">
         <h3>Real Time Chat</h3>
 
-        <ToggleTheme />
+        <ToggleTheme checked={isDark} onChange={handleChange} />
       </div>
 
       <h2 className="reg-form-title">Create an account to Real Time Chat</h2>

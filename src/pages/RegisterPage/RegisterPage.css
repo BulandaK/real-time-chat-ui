@@ -5,11 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--first-color);
   /* justify-content: center; */
 }
 
 .reg-toggle {
-  width: 70%;
+  width: 60%;
   margin-top: 3%;
   display: flex;
   align-items: center;
@@ -17,8 +18,8 @@
 }
 
 .reg-toggle h3 {
-  color: white;
-  background: #d7263d;
+  color: var(--base-color);
+  background: var(--second-color);
   font-size: 0.9rem;
   border-radius: 12px;
   padding: 2%;
@@ -26,23 +27,23 @@
 
 .reg-form-title {
   margin-top: 20%;
-  width: 70%;
+  width: 60%;
   padding: 3% 0 3% 10px;
 
-  color: white;
-  background: #0197F6;
+  color: var(--base-color);
+  background: var(--first-color);
   margin-bottom: 1%;
 }
 
 .reg-form {
-  width: 70%;
+  width: 60%;
   height: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid #0197F6;
-  border-bottom: 1px solid #0197F6;
+  border-top: 1px solid var(--first-color);
+  border-bottom: 1px solid var(--first-color);
   /* background-color: #68c5db; */
 }
 
@@ -60,10 +61,26 @@
   width: 100%;
   height: 10%;
   font-size: 1.2rem;
-  color: #fff;
-  background-color: #0197F6;
+  color: var(--base-color);
+  background-color: var(--first-color);
 }
 
 .reg-form>button:hover {
-  background-color: #68c5db;
+  background-color: var(--hover-color);
+}
+
+:root {
+  --first-color: #0197F6;
+  --second-color: #d7263d;
+  --base-color: white;
+  --hover-color: #68C5DB;
+  --background-color: white;
+}
+
+[data-theme="dark"] {
+  --first-color: #02182B;
+  --second-color: #d7263d;
+  --base-color: white;
+  --background-color: gray;
+  --hover-color: #0197F6;
 }
