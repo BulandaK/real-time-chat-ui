@@ -20,8 +20,7 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
-  border-radius: 12px;
-  border: var(--fifth-color) solid 2px;
+
   /* background-color: #68c5db; */
 }
 
@@ -57,7 +56,7 @@
 }
 
 .login-form>button:hover {
-  background-color: var(--fifth-color);
+  /* background-color: var(--third-color); */
   color: var(--fifth-color);
   ;
 }

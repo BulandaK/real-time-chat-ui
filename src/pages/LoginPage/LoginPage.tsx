@@ -1,5 +1,5 @@
 // import React from "react";
-import { Button, TextField } from "@mui/material";
+import { Button, colors, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
 import "./LoginPage.css";
@@ -28,8 +28,11 @@ const CustomCssInput = styled(TextField)({
     },
     "&.Mui-focused": {
       backgroundColor: "var(--fifth-color)",
-      color: "var(--third-color)"
+      color: "var(--third-color)",
     },
+    "&.Mui": {
+      color: "var(--third-color)",
+    }
   },
 });
 
@@ -57,7 +60,6 @@ const LoginPage = () => {
   return (
     <div className="login-container" data-theme={isDark ? "dark" : "light"}>
       <div className="reg-toggle">
-        <h3>Real Time Chat</h3>
 
         <ToggleTheme checked={isDark} onChange={handleChange} />
       </div>

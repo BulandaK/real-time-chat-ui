@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.layout-container > h1 {
+.layout-container>h1 {
   width: 100%;
   position: absolute;
   top: 20%;
@@ -31,6 +31,29 @@
   top: 80%;
   left: 50%;
   transform: translateX(-50%);
-  border-bottom: 1px solid #d7263d;
+  border-bottom: 1px solid var(--first-color);
   padding-bottom: 1%;
+}
+
+:root {
+  --first-color: #0197F6;
+  --second-color: #d7263d;
+  --third-color: #02182B;
+  --fourth-color: #68C5DB;
+  --fifth-color: #448FA3;
+  --base-color: white;
+  --background-color: white;
+  --white-02182B-color: white;
+}
+
+[data-theme="dark"] {
+  --first-color: #02182B;
+  --second-color: #d7263d;
+  --third-color: #68C5DB;
+  --fourth-color: #448FA3;
+  --fifth-color: #0197F6;
+  --base-color: white;
+  --white-02182B-color: #02182B;
+  --background-color: #02182B;
+  --hover-color: #0197F6;
 }

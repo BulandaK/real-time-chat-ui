@@ -61,14 +61,13 @@ const RegisterPage = () => {
   return (
     <div className="reg-container" data-theme={isDark ? "dark" : "light"}>
       <div className="reg-toggle">
-        <h3>Real Time Chat</h3>
 
         <ToggleTheme checked={isDark} onChange={handleChange} />
       </div>
 
-      <h2 className="reg-form-title">Create an account to Real Time Chat</h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="reg-form">
+        <h2 className="reg-form-title">Create an account to Real Time Chat</h2>
         {/* register your input into the hook by invoking the "register" function */}
 
         <CustomCssInput
