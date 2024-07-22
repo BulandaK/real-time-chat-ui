@@ -1,0 +1,49 @@
+.main-chat {
+  width: 75%;
+  height: 100%;
+  background-color: #68c5db;
+}
+
+.chat-header {
+  width: 100%;
+  height: 15%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+.chat-content {
+  width: 100%;
+  height: 75%;
+}
+
+.send-msg {
+  width: 100%;
+  height: 10%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.chat-info {
+  display: flex;
+  margin-left: 5%;
+  gap: 30px;
+}
+
+.chat-operations {
+  width: 20%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.chat-operations > * {
+  padding: 2% 5% 2% 5%;
+}
+
+.chat-operations > *:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
