@@ -9,6 +9,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import { Button } from "@mui/material";
 import CustomCssInput from "../../components/CustomCssInput/CustomCssInput";
 import ChatItem from "./ChatItem/ChatItem";
+import MainChat from "./MainChat/MainChat";
 
 function ChatPage() {
   return (
@@ -31,7 +32,7 @@ function ChatPage() {
           <ChatItem />
         </div>
       </div>
-      <div className="chat-content"></div>
+      <MainChat />
     </div>
   );
 }

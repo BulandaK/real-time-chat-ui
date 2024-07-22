@@ -2,7 +2,9 @@
   width: 100%;
   height: 100%;
   /* background-color: aqua; */
+  display: flex;
 }
+
 .chat-page-container > .side-bar {
   width: 25%;
   height: 100%;
