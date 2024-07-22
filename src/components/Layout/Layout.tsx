@@ -18,7 +18,7 @@ function Layout() {
   }, []);
 
   return (
-    <div className="layout-container">
+    <div className="layout-container" >
       <h1>Real Time Chat </h1>
       <div className="layout-img">{imgTable}</div>
       <div className="layout-description">

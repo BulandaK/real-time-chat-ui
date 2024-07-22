@@ -3,7 +3,6 @@ import { Button, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import "./RegisterPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
 
 type Inputs = {
   name: string;
@@ -49,17 +48,12 @@ const RegisterPage = () => {
   });
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   console.log(errors);
+
   return (
-    <div className="reg-container">
-      <div className="reg-toggle">
-        <h3>Real Time Chat</h3>
-
-        <ToggleTheme />
-      </div>
-
-      <h2 className="reg-form-title">Create an account to Real Time Chat</h2>
+    <div className="reg-container" >
 
       <form onSubmit={handleSubmit(onSubmit)} className="reg-form">
+        <h2 className="reg-form-title">Create an account to Real Time Chat</h2>
         {/* register your input into the hook by invoking the "register" function */}
 
         <CustomCssInput
