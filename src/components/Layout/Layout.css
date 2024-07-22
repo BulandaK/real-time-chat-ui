@@ -2,7 +2,7 @@
   width: 60%;
   height: 100%;
   display: inline-block;
-  background-color: #02182b;
+  background-color: var(--white-02182B-color);
   position: relative;
 }
 
@@ -14,7 +14,7 @@
   text-align: center;
   color: white;
   z-index: 3;
-  background: linear-gradient(to right, #d7263d, #02182b, #d7263d);
+  background: linear-gradient(to right, #d7263d, #02182B, #d7263d);
 }
 
 .layout-img img {
@@ -25,13 +25,13 @@
 }
 
 .layout-description {
-  color: white;
+  color: var(--third-color);
   width: 55%;
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translateX(-50%);
-  border-bottom: 1px solid var(--first-color);
+  border-bottom: 1px solid var(--fifth-color);
   padding-bottom: 1%;
 }
 
@@ -41,8 +41,6 @@
   --third-color: #02182B;
   --fourth-color: #68C5DB;
   --fifth-color: #448FA3;
-  --base-color: white;
-  --background-color: white;
   --white-02182B-color: white;
 }
 
@@ -52,8 +50,5 @@
   --third-color: #68C5DB;
   --fourth-color: #448FA3;
   --fifth-color: #0197F6;
-  --base-color: white;
   --white-02182B-color: #02182B;
-  --background-color: #02182B;
-  --hover-color: #0197F6;
 }

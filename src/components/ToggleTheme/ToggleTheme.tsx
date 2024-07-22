@@ -2,6 +2,7 @@
 import { styled } from "@mui/material/styles";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import { useTheme } from './ThemeContext';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -49,19 +50,20 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-const ToggleTheme = ({ checked, onChange }: { checked: boolean, onChange: () => void }) => {
-  return (
-    <div>
+const ToggleTheme = () => {
+  const { isDark, toggleTheme } = useTheme();
 
-      <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }}
-          defaultChecked
-          onChange={onChange}
-          checked={checked}
-        />}
-        label=""
-      />
-    </div>
+  return (
+    <FormControlLabel
+      control={
+        <MaterialUISwitch
+          sx={{ m: 1 }}
+          checked={isDark}
+          onChange={toggleTheme}
+        />
+      }
+      label=""
+    />
   );
 };
 

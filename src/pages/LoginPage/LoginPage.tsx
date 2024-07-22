@@ -51,20 +51,10 @@ const LoginPage = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   console.log(errors);
 
-  const [isDark, setIsDark] = useState<boolean>(false);
 
-  const handleChange = () => {
-    setIsDark(!isDark);
-  };
 
   return (
-    <div className="login-container" data-theme={isDark ? "dark" : "light"}>
-      <div className="reg-toggle">
-
-        <ToggleTheme checked={isDark} onChange={handleChange} />
-      </div>
-
-
+    <div className="login-container">
       <form onSubmit={handleSubmit(onSubmit)} className="login-form">
         <h2 className="login-title">Login to Real Time Chat</h2>
         <CustomCssInput
@@ -86,7 +76,6 @@ const LoginPage = () => {
           error={errors.password ? true : false}
           helperText={errors.password?.message}
         />
-
         <Button type="submit">Login</Button>
       </form>
     </div>

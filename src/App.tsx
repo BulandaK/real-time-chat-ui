@@ -1,14 +1,20 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
+import ToggleTheme from "../src/components/ToggleTheme/ToggleTheme";
 import Layout from "./components/Layout/Layout";
-
+import { ThemeProvider } from "./components/ToggleTheme/ThemeContext";
 function App() {
+
+
   return (
-    <div className="app-container" >
+    <ThemeProvider>
       <Layout />
 
       <Outlet />
-    </div>
+      <div className="toggle-theme">
+        <ToggleTheme />
+      </div>
+    </ThemeProvider>
   );
 }
 

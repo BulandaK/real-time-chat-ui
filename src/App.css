@@ -2,8 +2,36 @@
   width: 100vw;
   height: 100vh;
 }
+
+div {
+  /* border: 1px solid var(--fifth-color); */
+}
+
 .app-container {
   width: 100%;
   height: 100%;
   display: flex;
+
+}
+
+.toggle-theme {
+  background-color: var(--white-02182B-color);
+}
+
+:root {
+  --first-color: #0197F6;
+  --second-color: #d7263d;
+  --third-color: #02182B;
+  --fourth-color: #68C5DB;
+  --fifth-color: #448FA3;
+  --white-02182B-color: white;
+}
+
+[data-theme="dark"] {
+  --first-color: #02182B;
+  --second-color: #d7263d;
+  --third-color: #68C5DB;
+  --fourth-color: #448FA3;
+  --fifth-color: #0197F6;
+  --white-02182B-color: #02182B;
 }
