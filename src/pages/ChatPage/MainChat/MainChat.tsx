@@ -1,4 +1,4 @@
-import { Avatar, IconButton, TextField } from "@mui/material";
+import { Avatar, Button, IconButton, TextField } from "@mui/material";
 import SettingsIcon from "@mui/icons-material/Settings";
 import SendIcon from "@mui/icons-material/Send";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
@@ -20,7 +20,9 @@ const MainChat = () => {
 
         <div className="chat-operations">
           <span>num of participants</span>
-          <span>invite</span>
+          <div>
+            <Button>invite</Button>
+          </div>
           <IconButton children={<SettingsIcon />} />
         </div>
       </div>
