@@ -1,10 +1,8 @@
 // import React from "react";
-import { Button, colors, TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import ToggleTheme from "../../components/ToggleTheme/ToggleTheme";
 import "./LoginPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useState } from "react";
 
 type Inputs = {
   email: string;

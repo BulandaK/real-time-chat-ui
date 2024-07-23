@@ -4,6 +4,7 @@
   display: inline-block;
   background-color: var(--white-02182B-color);
   position: relative;
+  transition: background-color 500ms linear;
 }
 
 .layout-container>h1 {

@@ -1,6 +1,7 @@
 #root {
   width: 100vw;
   height: 100vh;
+
 }
 
 div {
@@ -16,6 +17,7 @@ div {
 
 .toggle-theme {
   background-color: var(--white-02182B-color);
+  transition: background-color 500ms linear;
 }
 
 :root {

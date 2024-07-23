@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--white-02182B-color);
+  transition: background-color 500ms linear;
   /* justify-content: center; */
 
 }
@@ -30,7 +31,6 @@
   flex: 1;
   padding: 3% 0 3% 10px;
   color: var(--base-color);
-  background: var(--white-02182B-color);
   margin-bottom: 1%;
   border-bottom: var(--fifth-color) solid 2px;
   color: var(--third-color)
